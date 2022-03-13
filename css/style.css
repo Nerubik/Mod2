@@ -1,0 +1,90 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+}
+p {
+  margin-top: -4px;
+}
+h1 {
+  text-align: center;
+  color: tomato;
+  font-size: 50px;
+}
+.col-lg-4,
+.col-md-6,
+.col-md-12,
+.col-sm-12 {
+  width: 100%;
+  margin: 1%;
+  display: block;
+  position: relative;
+  border: 5px solid black;
+  background-color: #999;
+  color: rgb(0, 0, 0);
+  padding: 50px 10px 10px 10px;
+}
+.point1-title,
+.point2-title,
+.point3-title {
+  font-weight: bold;
+  position: absolute;
+  text-align: center;
+  padding: 5px;
+  top: 0;
+  right: 0;
+  border: 4px solid black;
+  font-size: 125%;
+  width: 100px;
+  height: 40px;
+  margin-top: -4px;
+  margin-right: -4px;
+}
+
+.point1-title {
+  background-color: tomato;
+}
+.point2-title {
+  background-color: rgb(83, 32, 23);
+  color: white;
+}
+.point3-title {
+  background-color: rgb(71, 255, 148);
+}
+@media (min-width: 1200px) {
+  .col-lg-4,
+  .col-md-6,
+  .col-md-12,
+  .col-sm-12 {
+    float: left;
+  }
+  .col-lg-4 {
+    width: 31%;
+  }
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+  .col-lg-4,
+  .col-md-6,
+  .col-md-12,
+  .col-sm-12 {
+    float: left;
+  }
+  .col-md-6 {
+    width: 47%;
+  }
+  .col-md-12 {
+    width: 96%;
+  }
+}
+@media (max-width: 767px) {
+  .col-lg-4,
+  .col-md-6,
+  .col-md-12,
+  .col-sm-12 {
+    float: left;
+  }
+  .col-sm-12 {
+    width: 100%;
+  }
+}
